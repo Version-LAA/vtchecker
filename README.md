@@ -16,6 +16,10 @@ This script is aimed at utilizing your free API key from VirusTotal and providin
 - **Important Notice** File must be in CSV format.
 - Example: If filename is maliciousip.csv, the variable within the script should be set to **file_name = 'maliciousip.csv'** ( Be sure to to include open/close '')
 
+- Libraries needed included pandas and requests. If script doesn't run successfully, do the following commands in your terminal:
+  - pip install pandas
+  - pip install requests
+
 ### Variables Example
 ![variables Examples](https://github.com/cybersecurebyte/vtchecker/blob/main/stuff/variables.png)
 
