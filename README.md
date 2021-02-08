@@ -1,40 +1,41 @@
-# vtchecker Version 1
+# vtChecker Version 1
 A quick script to aid in Virustotal IP lookups using their free api key
 
-This script is aimed at utilizing your free API key from VirusTotal and providing lookups for the IP' to provide information on:
+This script is aimed at utilizing your free API key from VirusTotal and providing intel lookups on the provided IP's to provide information on:
 
 - Potential Owner/Organization
-- Hosting Country
-- And if any engines detected the IP as potentially malicious
+- Hosting Country of IP Address
+- Number of malicious detections VirusTotal has for a given IP address.
   
 
 
 # Installation/Running
 
-1.  After downloading, and opening the script. Be sure to enter your filename and api key in the appropriate variables.
+1.  To properly run the scrip, you will need to change two variables within the script with your API KEY, and the name of the file containing your list of IP addresses. 
 
-![variables](https://github.com/cybersecurebyte/vtchecker/blob/main/variables.png)
+- **Important Notice** File must be in CSV format.
+- Example: If filename is maliciousip.csv, the variable within the script should be set to **file_name = 'maliciousip.csv'** ( Be sure to to include open/close '')
 
-2. In your terminal, be sure to do pip install requests and pip install pandas
+![variables Examples](https://github.com/cybersecurebyte/vtchecker/blob/main/variables.png)
 
-3. Please be sure to place pcap file within pcapalyzer root folder.
+2. For ease of use, place CSV file in the same folder as script.
 
 
 
 # Syntax
 
-From your terminal
+From your terminal, simply run:
 
-- vtChecker.py 
+ python vtChecker.py 
 
 
 # Output
 
 version 1.0
-- IP Address
-- Potential Owner/Organization
-- Hosting Country
-- And if any engines detected the IP as potentially malicious
+- IP address
+- Potential Owner/Organization of IP address
+- Hosting Country of IP address
+- Number of malicious detections VirusTotal has for a given IP address.
   
   
 # Sample Output Images
