@@ -39,10 +39,10 @@ version 1.0
   
 # Sample Output Images
 
-![Terminal Output ]()
+![Terminal Output ](https://github.com/cybersecurebyte/vtchecker/blob/main/terminal.png)
 
 
-![CSV Outputt ]()
+![CSV Outputt ](https://github.com/cybersecurebyte/vtchecker/blob/main/csv.png)
 
 
 
