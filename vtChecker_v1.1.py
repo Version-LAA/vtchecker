@@ -34,9 +34,11 @@ def intake_file(file):
 
 def vt_caller():
     count = 0
-    limit = 3
+    limit = 4
     ip_list = intake_file(file_name)
     results = []
+    print('The program is loading up your ', str(len(ip_list)), ' IP addresses')
+    time.sleep(15)
     api = api_key
     u = 'https://www.virustotal.com/vtapi/v2/ip-address/report'
     print('looks like there are ', len(ip_list), ' IP\'s to check')
@@ -58,8 +60,14 @@ def vt_caller():
 
     # Parses json responses from VirusTotal
     for i in results:
-        as_owner = i['as_owner']
-        country = i["country"]
+        if 'as_owner' in i :
+            as_owner = i['as_owner']
+        else:
+            as_owner = 'none'
+        if 'country' in i:
+            country = i["country"]
+        else:
+            country = 'none'
         ip = ip_list[c]
         detected_urls = i['detected_urls']
 
