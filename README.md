@@ -17,7 +17,7 @@ This script is aimed at utilizing your free API key from VirusTotal and providin
 - Example: If filename is maliciousip.csv, the variable within the script should be set to **file_name = 'maliciousip.csv'** ( Be sure to to include open/close '')
 
 ### Variables Example
-![variables Examples](https://github.com/cybersecurebyte/vtchecker/blob/main/variables.png)
+![variables Examples](https://github.com/cybersecurebyte/vtchecker/blob/main/stuff/variables.png)
 
 2. For ease of use, place CSV file in the same folder as script.
 
@@ -43,10 +43,12 @@ version 1.0
 
 ### Terminal Output Example
 
-![Terminal Output ](https://github.com/cybersecurebyte/vtchecker/blob/main/terminal.png)
+![Terminal Output ](https://github.com/cybersecurebyte/vtchecker/blob/main/stuff/terminal.png)
 
 ### CSV Output Example
-![CSV Outputt ](https://github.com/cybersecurebyte/vtchecker/blob/main/csv.png)
+![CSV Outputt ](https://github.com/cybersecurebyte/vtchecker/blob/main/stuff/csv.png)
+
+
 
 
 
