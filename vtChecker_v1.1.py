@@ -68,9 +68,13 @@ def vt_caller():
             country = i["country"]
         else:
             country = 'none'
-        ip = ip_list[c]
-        detected_urls = i['detected_urls']
+        if 'detected_urls' in i:
 
+            detected_urls = i['detected_urls']
+        else:
+            detected_urls = 'none'
+            
+        ip = ip_list[c]
         num_of_detections = 0
         for d in detected_urls:
             num_of_detections += 1
@@ -87,7 +91,7 @@ def vt_results():
     # creates a dataframe of results
     df = pd.DataFrame(data)
 
-    print("Here's your Data, a CSV has also been created name ipvtresults.csv")
+    print("\n\nHere's your Data, a CSV has also been created name ipvtresults.csv")
 
     for i in data:
         print(i)
