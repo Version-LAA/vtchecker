@@ -13,7 +13,7 @@ This script is aimed at utilizing your free API key from VirusTotal and providin
 
 1.  After downloading, and opening the script. Be sure to enter your filename and api key in the appropriate variables.
 
-![variables]()
+![variables](https://github.com/cybersecurebyte/vtchecker/blob/main/variables.png)
 
 2. In your terminal, be sure to do pip install requests and pip install pandas
 
