@@ -31,6 +31,7 @@ From your terminal
 # Output
 
 version 1.0
+- IP Address
 - Potential Owner/Organization
 - Hosting Country
 - And if any engines detected the IP as potentially malicious
