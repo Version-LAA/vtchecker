@@ -22,10 +22,9 @@ api_key = '<<**ENTER YOUR API KEY HERE**>>'
 
 def intake_file(file):
     # Open and read IP list
-    # open_file = open(file)
-    # read_file = reader(open_file)
-    # ip_list = list(read_file)
-    ip_list = ['117.213.46.122']
+    open_file = open(file)
+    read_file = reader(open_file)
+    ip_list = list(read_file)
     return ip_list
 
 
