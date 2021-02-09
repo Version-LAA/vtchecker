@@ -5,7 +5,7 @@ This script is aimed at utilizing your free API key from VirusTotal and providin
 
 - Potential Owner/Organization
 - Hosting Country of IP Address
-- Number of malicious detections VirusTotal has for a given IP address.
+- URLs at this IP address that have at least 1 detection on a URL scan
   
 
 
