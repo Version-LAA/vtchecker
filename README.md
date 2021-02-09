@@ -50,7 +50,7 @@ version 1.0
 - IP address
 - Potential Owner/Organization of IP address
 - Hosting Country of IP address
-- Number of malicious detections VirusTotal has for a given IP address.
+- URLs at this IP address that have at least 1 detection on a URL scan
   
   
 # Sample Output Images
