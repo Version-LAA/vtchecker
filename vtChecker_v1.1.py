@@ -22,10 +22,10 @@ api_key = '<<**ENTER YOUR API KEY HERE**>>'
 
 def intake_file(file):
     # Open and read IP list
-    open_file = open(file)
-    read_file = reader(open_file)
-    ip_list = list(read_file)
-
+    # open_file = open(file)
+    # read_file = reader(open_file)
+    # ip_list = list(read_file)
+    ip_list = ['117.213.46.122']
     return ip_list
 
 
@@ -60,7 +60,7 @@ def vt_caller():
 
     # Parses json responses from VirusTotal
     for i in results:
-        if 'as_owner' in i :
+        if 'as_owner' in i:
             as_owner = i['as_owner']
         else:
             as_owner = 'none'
@@ -71,19 +71,18 @@ def vt_caller():
         if 'detected_urls' in i:
 
             detected_urls = i['detected_urls']
+            num_of_detections = 0
+            for d in detected_urls:
+                print(d)
+                num_of_detections += 1
         else:
             detected_urls = 'none'
-            
+
         ip = ip_list[c]
-        num_of_detections = 0
-        for d in detected_urls:
-            num_of_detections += 1
+
         data.append([ip, as_owner, country, num_of_detections])
         c += 1
     return data
-
-
-
 
 
 def vt_results():
@@ -91,7 +90,7 @@ def vt_results():
     # creates a dataframe of results
     df = pd.DataFrame(data)
 
-    print("\n\nHere's your Data, a CSV has also been created name ipvtresults.csv")
+    print("\n\nHere's your Data, a CSV has also been created name ipvtresults-[timestamp].csv")
 
     for i in data:
         print(i)
@@ -102,6 +101,7 @@ def vt_results():
     outfile = 'ip_vtresults-' + ft + '.csv'
     output = df.to_csv(outfile)
     return output
+
 
 print("** Welcome to the Virustotal Checker for free API Keys!!** \n")
 intake_file(file_name)
